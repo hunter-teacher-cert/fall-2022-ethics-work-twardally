@@ -1,3 +1,9 @@
+#nim.py
+#Tanya Wardally
+#CSCI 77800 Fall 2022
+#collaborators:
+#consulted:
+
 stones = 12
 while stones >= 0:
   
