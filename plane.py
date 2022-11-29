@@ -193,7 +193,7 @@ def purchase_economy_block(plane,economy_sold,number,name):
     economy_sold dictionary and return the new dictionary
     """
     seats_avail = get_total_seats(plane)
-    "seats_avail = seats_avail - get_number_economy_sold(economy_sold)
+    "seats_avail = seats_avail - get_number_economy_sold(economy_sold)"
     seats_avail = get_avail_seats(plane, economy_sold)
   
   
@@ -250,6 +250,13 @@ def fill_plane(plane):
     
     
 def main():
+    response =str(input("Do you have children under age 16 traveling with you? Y/N  "))
+    ans = "y" or "Y"
+    if response == ans:
+        print("You will be assigned seats together with your child at no extra charge.")
+    else:
+        print("You have the option to purchase your assigned seat as an economy plus    passenger.")
+
     plane = create_plane(10,5)
     plane = fill_plane(plane)
     print(get_plane_string(plane))
